@@ -1,4 +1,4 @@
-# Hello, I'm Prajakta Darekar 👋
+# Hello, I'm Prajakta Darekar 👋🏼
 
 I'm a Computer Science (AI & ML) engineering student with a passion for technology and coding. Here's a bit about me:
 
