@@ -6,6 +6,13 @@ I'm a Computer Science (AI & ML) engineering student with a passion for technolo
 - 📚 Currently pursuing my Bachelor's in Computer Science & Engineering.
 - 🎓 Expected graduation date: 2025.
 
+## Coding Profiles
+
+- **HackerRank Profile:** [![HackerRank Status](https://img.shields.io/badge/HackerRank-Profile-blue?style=flat-square&logo=hackerrank&logoColor=white&color=2EC866)](https://www.hackerrank.com/prajudarekar04)
+- **CodeChef Profile:** [![CodeChef Status](https://img.shields.io/badge/CodeChef-Profile-red?style=flat-square&logo=codechef&logoColor=white&color=FF5A5F)](https://www.codechef.com/users/prajudarekar04)
+- **LeetCode Profile:**
+<br/> [![LeetCode Status](https://leetcard.jacoblin.cool/Praju04)](https://leetcode.com/Praju04)
+
 ## Projects (Work in Progress)
 
 I'm currently working on several exciting projects, although they are not yet completed. Here are a few of them:
