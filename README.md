@@ -3,7 +3,7 @@
 I'm a Computer Science (AI & ML) engineering student with a passion for technology and coding. Here's a bit about me:
 
 - 🔭 I'm proficient in languages like C, C++, Java, and Python.
-- 📚 Currently pursuing my Bachelor's in Computer Science & Engineering.
+- 📚 Currently pursuing my Bachelor's in Computer Science & Engineering(Artificial Intelligence & Machine Learning).
 - 🎓 Expected graduation date: 2025.
 
 ## Coding Profiles
