@@ -22,18 +22,6 @@ I'm currently working on several exciting projects, although they are not yet co
 
 These projects are still in development, and I'm actively working to bring them to completion. Stay tuned for updates!
 
-## Achievements and Awards
-
-- First Prize, 'C Programming with Blind Faith' competition.
-
-## Certifications
-
-- Introduction to Cybersecurity
-- Front End Development - HTML
-- Front End Development - CSS
-- Introduction to Packet Tracer
-- LaTeX
-
 ## Contact Information
 
 📧 Email: prajakta.darekar04@gmail.com
