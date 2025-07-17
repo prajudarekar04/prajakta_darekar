@@ -1,4 +1,62 @@
- <!-- 
+ # 🌐 Prajakta Darekar – Portfolio
+
+Welcome to my personal portfolio website!  
+This site showcases my projects, technical skills, and professional details.  
+
+**🔗 Live Portfolio:** [https://prajudarekar04.github.io](https://prajudarekar04.github.io)
+
+---
+
+## 📌 About Me
+Final-year engineering graduate passionate about building practical and efficient software solutions.  
+Skilled in **Java, MySQL, C#**, and experienced in creating **desktop and Flutter-based applications**.  
+Keen interest in **clean software design** and **database management**.
+
+---
+
+## 🚀 Projects
+- **🎓 Tuition Handler** – Java + MySQL desktop app for tuition management & email automation.  
+- **📊 QuickSumm** – Text summarization tool (basic NLP concepts).  
+- **📷 SnapAttend** – Facial recognition-based attendance system (Flutter, Flask, MongoDB).  
+- **🖥️ C# OOP Practice** – Mini projects exploring OOP concepts & file handling in C#.  
+
+For complete list, visit my [GitHub Repositories](https://github.com/prajudarekar04?tab=repositories).
+
+---
+
+## 🛠️ Tech Stack
+
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+---
+
+## 📄 Resume
+You can view or download my resume directly from the portfolio website:  
+[**View Resume**](https://prajudarekar04.github.io)
+
+---
+
+## 📬 Contact
+- **Email:** prajakta.darekar04@gmail.com  
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/prajaktadarekar/)  
+- **GitHub:** [prajudarekar04](https://github.com/prajudarekar04)
+
+---
+
+### ⚡ Deployment
+This portfolio is built with **HTML, CSS, and JavaScript**  
+and hosted free on **GitHub Pages**.
+
+<!-- 
 # Hello, I'm Prajakta Darekar 👋🏼
 
 I'm a Computer Science (AI & ML) engineering student with a passion for technology and coding. Here's a bit about me:
