@@ -1,3 +1,4 @@
+ <!-- 
 # Hello, I'm Prajakta Darekar 👋🏼
 
 I'm a Computer Science (AI & ML) engineering student with a passion for technology and coding. Here's a bit about me:
@@ -40,3 +41,4 @@ These projects are still in development, and I'm actively working to bring them 
 - System Software
 
 Feel free to explore my repositories and connect with me for collaboration or networking opportunities. Let's code together!
+-->
