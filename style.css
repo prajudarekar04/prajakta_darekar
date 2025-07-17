@@ -1,0 +1,550 @@
+/* ===========================
+   RESET & BASE STYLES
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 80px; /* Matches header height */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background-color: #f9fbff;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  color: #333;
+  transition: background-color 0.4s ease, color 0.4s ease;
+
+}
+
+main {
+  flex: 1; /* Push footer to bottom */
+}
+
+/* Spacer to avoid content hiding behind sticky header */
+#top-spacer {
+  height: 70px; /* Same as header height */
+  width: 100%;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+header {
+  background: #1e3a8a;
+  color: white;
+  padding: 18px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: 70px;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+nav h1 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  white-space: nowrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 6px 4px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a[aria-current="page"] {
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+}
+
+/* Toggle button */
+#toggle-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+#toggle-btn:hover {
+  background: white;
+  color: #1e3a8a;
+}
+
+/* ===========================
+   SECTIONS GENERAL
+=========================== */
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.4);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.section:nth-child(even) {
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  border-bottom: 3px solid #1e3a8a;
+  padding-bottom: 5px;
+  display: inline-block;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ===========================
+   HOME SECTION
+=========================== */
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #1e3a8a;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.home-text {
+  max-width: 480px;
+  text-align: left;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.skill {
+  background: #e0e7ff;
+  color: #1e3a8a;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(30, 58, 138, 0.3);
+}
+
+/* ===========================
+   PROJECTS
+=========================== */
+/* Uniform card heights using grid auto rows and flex */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  grid-auto-rows: 1fr; /* make rows equal height */
+}
+
+.project-card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* stretch to fill grid cell */
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(30, 58, 138, 0.3);
+}
+.project-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+  /* Dark mode override in body.dark */
+}
+.project-card p {
+  font-size: 1rem;
+  color: #444;
+  /* Dark mode override in body.dark */
+}
+.project-card a {
+  display: inline-block;
+  margin-top: auto; /* push link to bottom */
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.project-card a:hover {
+  text-decoration: underline;
+  color: #3b82f6;
+}
+
+/* ===========================
+   ACHIEVEMENTS
+=========================== */
+.achievements-list {
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.achievements-list li {
+  list-style: none;
+  margin-left: 0;
+  background: #e0e7ff;
+  color: #1e3a8a;
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: default;
+}
+.achievements-list li:hover {
+  transform: translateX(5px);
+  background: #d4defc;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  background: #1e3a8a;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background: #163172;
+}
+
+/* Animated Resume Button */
+.resume-btn {
+  background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.resume-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 14px rgba(59, 130, 246, 0.5);
+}
+.resume-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.4s ease;
+  pointer-events: none;
+}
+.resume-btn:hover::after {
+  left: 100%;
+}
+
+/* ===========================
+   SOCIAL LINKS & BADGES
+=========================== */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.social-links a img {
+  height: 44px;
+  width: auto;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.15));
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.social-links a:hover img {
+  transform: scale(1.12);
+  filter: drop-shadow(0 2px 5px rgba(30,58,138,0.5));
+  box-shadow: 0 5px 16px rgba(30,58,138,0.5);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+/* ===========================
+   DARK MODE - SOFT BLENDING
+=========================== */
+body.dark {
+  background-color: #18181b;
+  color: #e5e7eb; /* Better default text */
+  position: relative;
+}
+
+body.dark::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  opacity: 0.15;
+  mix-blend-mode: screen;
+  z-index: 9999;
+}
+
+/* Keep your original navbar dark mode */
+body.dark header {
+  background-color: #1e3a8a;
+  color: #ddd;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark nav ul li a {
+  color: #ddd;
+}
+
+body.dark nav ul li a:hover,
+body.dark nav ul li a[aria-current="page"] {
+  background-color: #2563eb;
+  color: #f0f9ff;
+}
+
+body.dark #toggle-btn {
+  border-color: #ccc;
+  color: #ccc;
+}
+body.dark #toggle-btn:hover {
+  background-color: #ccc;
+  color: #0f172a;
+}
+
+body.dark .section:nth-child(even) {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+body.dark .section {
+  border-color: #333;
+}
+
+body.dark .section h2 {
+  color: #93c5fd; /* Better contrast */
+  border-color: #93c5fd;
+}
+
+body.dark .home-text {
+  color: #e5e7eb; /* Better visibility */
+}
+
+body.dark .skill {
+  background: #334155; /* Better contrast */
+  color: #f1f5f9;
+}
+
+/* Dark mode fixes for project cards */
+body.dark .project-card {
+  background: #111827;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  color: #ddd;
+}
+
+/* Project title and links brighter for better visibility */
+body.dark .project-card h3,
+body.dark .project-card a {
+  color: #93c5fd;
+}
+
+body.dark .project-card p {
+  color: #d1d5db;
+}
+
+body.dark .project-card:hover {
+  box-shadow: 0 8px 35px rgba(37, 99, 235, 0.7);
+}
+
+body.dark .achievements-list li {
+  background: #1e293b;
+  color: #cbd5e1;
+}
+
+body.dark .btn, body.dark .resume-btn {
+  background: #2563eb;
+  color: #f0f9ff;
+}
+body.dark .btn:hover, body.dark .resume-btn:hover {
+  background: #1e40af;
+}
+
+body.dark .social-links a img {
+  filter: brightness(1.2);
+}
+
+/* ===========================
+   BACK TO TOP BUTTON
+=========================== */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.3rem;
+  box-shadow: 0 4px 8px rgba(30, 58, 138, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 2000;
+}
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+#back-to-top:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 6px 14px rgba(59, 130, 246, 0.8);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px 20px;
+  }
+  nav {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  nav h1 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  nav ul {
+    justify-content: center;
+    flex-basis: 100%;
+  }
+  #toggle-btn {
+    margin-top: 10px;
+    flex-basis: 100%;
+    justify-self: center;
+  }
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-text {
+    max-width: 100%;
+  }
+  .skills-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 18px 15px;
+  }
+  nav ul li a {
+    font-size: 0.9rem;
+    padding: 6px 6px;
+  }
+}
