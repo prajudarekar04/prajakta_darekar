@@ -50,12 +50,6 @@ You can view or download my resume directly from the portfolio website:
 - **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/prajaktadarekar/)  
 - **GitHub:** [prajudarekar04](https://github.com/prajudarekar04)
 
----
-
-### ⚡ Deployment
-This portfolio is built with **HTML, CSS, and JavaScript**  
-and hosted free on **GitHub Pages**.
-
 <!-- 
 # Hello, I'm Prajakta Darekar 👋🏼
 
