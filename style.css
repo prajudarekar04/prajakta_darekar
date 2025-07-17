@@ -330,19 +330,40 @@ nav ul li a[aria-current="page"] {
   flex-wrap: wrap;
 }
 
+.social-links a {
+  display: inline-block;
+}
+
 .social-links a img {
   height: 44px;
   width: auto;
   filter: drop-shadow(0 1px 1px rgba(0,0,0,0.15));
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px;
   box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  transform-origin: center;
+  transform: scale(1);
+}
+
+.social-links a:hover {
+  cursor: pointer;
 }
 
 .social-links a:hover img {
   transform: scale(1.12);
   filter: drop-shadow(0 2px 5px rgba(30,58,138,0.5));
   box-shadow: 0 5px 16px rgba(30,58,138,0.5);
+}
+
+.social-links a:focus img {
+  outline: 2px solid #1e3a8a;
+  outline-offset: 4px;
+}
+
+@media (max-width: 400px) {
+  .social-links a img {
+    height: 36px;
+  }
 }
 
 /* ===========================
