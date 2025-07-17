@@ -1,9 +1,9 @@
- # 🌐 Prajakta Darekar – Portfolio
+ # 🌐 Prajakta Darekar. – Portfolio
 
 Welcome to my personal portfolio website!  
 This site showcases my projects, technical skills, and professional details.  
 
-**🔗 Live Portfolio:** [https://prajudarekar04.github.io](https://prajudarekar04.github.io)
+**🔗 Live Portfolio:** [https://prajudarekar04.github.io/prajudarekar04](https://prajudarekar04.github.io/prajudarekar04)
 
 ---
 
