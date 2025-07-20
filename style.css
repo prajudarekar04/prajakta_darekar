@@ -636,6 +636,11 @@ body.dark .social-links a img {
   nav h1 {
     font-size: 1.2rem; /* ✅ Compact for phones */
   }
+  nav ul {
+   flex-direction: column; 
+   align-items: center;
+   gap: 10px;
+  }
   nav ul li a {
     font-size: 0.85rem;
     padding: 4px 4px;
