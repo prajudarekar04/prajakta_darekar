@@ -8,9 +8,9 @@ This site showcases my projects, technical skills, and professional details.
 ---
 
 ## 📌 About Me
-Final-year engineering graduate passionate about building practical and efficient software solutions.  
-Skilled in **Java, MySQL, C#**, and experienced in creating **desktop and Flutter-based applications**.  
-Keen interest in **clean software design** and **database management**.
+I am a Computer Science graduate with a strong foundation in Java, C++, C#, and MySQL. I enjoy designing practical software solutions with a focus on clean, logical, and efficient code.
+
+💡 A problem-solver at heart, I believe in learning continuously and building solutions that make a difference.
 
 ---
 
@@ -29,6 +29,7 @@ For complete list, visit my [GitHub Repositories](https://github.com/prajudareka
 ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
@@ -46,9 +47,10 @@ You can view or download my resume directly from the portfolio website:
 ---
 
 ## 📬 Contact
-- **Email:** prajakta.darekar04@gmail.com  
-- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/prajaktadarekar/)  
-- **GitHub:** [prajudarekar04](https://github.com/prajudarekar04)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:prajakta.darekar04@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://prajudarekar04.github.io/prajudarekar04/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prajaktadarekar/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/prajudarekar04)
 
 <!-- 
 # Hello, I'm Prajakta Darekar 👋🏼
