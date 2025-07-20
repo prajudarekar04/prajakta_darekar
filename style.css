@@ -522,7 +522,7 @@ body.dark .social-links a img {
 /* ===========================
    RESPONSIVE
 =========================== */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   header {
     flex-wrap: wrap;
     height: auto;
@@ -567,5 +567,104 @@ body.dark .social-links a img {
   nav ul li a {
     font-size: 0.9rem;
     padding: 6px 6px;
+  }
+}
+ */
+/* ===========================
+   RESPONSIVE (Updated)
+=========================== */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px 20px;
+  }
+  nav {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  nav h1 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.4rem; /* ✅ Slightly smaller for tablets */
+  }
+  nav ul {
+    justify-content: center;
+    flex-basis: 100%;
+  }
+  nav ul li a {
+    font-size: 0.95rem;
+    padding: 6px 6px;
+  }
+  #toggle-btn {
+    margin-top: 10px;
+    flex-basis: 100%;
+    justify-self: center;
+  }
+
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .home-text {
+    max-width: 100%;
+    font-size: 1rem; /* ✅ Better fit on tablets */
+  }
+  .profile-pic {
+    width: 130px; /* ✅ Slightly smaller for tablets */
+    height: 130px;
+  }
+  .skills-container {
+    justify-content: center;
+  }
+  .skills-container img {
+    height: 40px; /* ✅ Adjust badge size for tablets */
+  }
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 12px 15px;
+  }
+  nav h1 {
+    font-size: 1.2rem; /* ✅ Compact for phones */
+  }
+  nav ul li a {
+    font-size: 0.85rem;
+    padding: 4px 4px;
+  }
+  .profile-pic {
+    width: 110px; /* ✅ Even smaller for phones */
+    height: 110px;
+  }
+  .home-text {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  .skills-container img {
+    height: 32px; /* ✅ Mobile-friendly badge size */
+    margin: 0.2rem;
+  }
+  .skill {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+  .project-card {
+    padding: 16px 12px;
+    font-size: 0.9rem;
+  }
+  footer {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+  .social-links a img {
+    height: 36px;
   }
 }
